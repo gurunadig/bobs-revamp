@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="row d-flex justify-content-center">
+                         
+    <div class="col-10 mt-4">
+
+        <div class="row">
+            <div class="col-10 mt-4">
+                <p class="all-head main-title-white">Bob's Artist</p>
+            </div>
+        </div>
+
+        <div class="row artist-row mt-2 mb-5 d-flex justify-content-start">
+            {% for artist in artists %}
+            <div class="col-2 track-grid mt-4 mb-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row no-gutters">
+                            <div class="col-12 containerr">
+                                <a href="{% url 'artistdetails' artist.id %}">
+                                    <img src="{{ artist.image.url }}" alt="Avatar" class="img-fluid image p-0 track-imgart-artist">
+                                </a>
+                                <div class="overlay">
+                                    <a href="{% url 'artistdetails' artist.id %}">
+
+                                        <div class="text"><i class="fas fa-info-circle consi"></i> <br>
+                                            Read More 
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 track-title">
+                                <p>{{ artist.artist_name }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+          
+        </div>
+        
+    </div>
+</div>
+
+{% endblock content %}

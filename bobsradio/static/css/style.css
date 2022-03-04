@@ -1,0 +1,324 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.navigation{
+    background-color: #282176;
+   
+}
+
+
+.navbar{
+    background-color: #282176;
+   
+}
+
+.nav-link{
+
+    color: #fff !important;
+}
+
+.logo{
+    max-height: 100px;
+}
+
+
+.bgcolor{
+    background-color: #131722;
+    height: 100vh;
+}
+
+
+
+
+.playerdiv{
+    width: 100%;
+    height: 5%;
+    background-color: #363c43;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin:0;
+}
+
+
+.artistcarousel{
+    max-height:450px !important;
+}
+
+.artistcarousel .owl-item img{
+    
+    max-height: 600px !important;
+}
+
+
+.main-title-white{
+    color: #fff;
+    margin-left: -15px;
+}
+
+.main-heading{
+    font-size:2rem;
+}
+
+.anchor{
+    text-decoration: none !important;
+    color: #fff !important;
+    font-size: 1.5rem;
+}
+
+
+
+.containerr {
+    position: relative;
+    width: 50%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  .image {
+    display: block;
+    width: 110%;
+    height: auto;
+    transition: .5s ease-in-out;
+  }
+  
+  .mar-off{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,23,68,.8);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease-in-out;
+  }
+  
+  .containerr:hover .overlay {
+    transform: scale(1);
+    /* transition: .5s ease-in-out; */
+  }
+ 
+  .containerr:hover .image {
+    transform: scale(0.9);
+    transition: .5s ease-in-out;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .fa-play{
+      font-size:2.5rem;
+  }
+
+
+  .consi{
+      font-size: 2.5rem;
+      margin-top:10px;
+  }
+
+
+  .main-heading-light{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.about-text{
+    color: #fff;
+}
+
+
+.iconscon{
+    font-size: 2rem;
+    color: #000;
+}
+.iconscon-white{
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+
+.artistname{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.artdetahead{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.to-white{
+    color: #fff;
+}
+/* sidebar styles ______________________________________________________________________________________ */
+
+.sidebargrid{
+    background-color: #17171b;
+    height: 100vh;
+    position: fixed;
+    width: 17%;
+    display: block;
+}
+
+.sidebarlogo{
+    max-height: 150px;
+}
+
+.playicon{
+    color: rgba(255,23,68,.8);
+
+}
+.btn-play{
+    background-color: #17171b;
+    border: 1px solid #555;
+}
+
+.heading{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.navul{
+    list-style: none;
+    margin-left: -20px;
+}
+
+.navli{
+    margin-bottom: 15px;
+}
+.navlink{
+    text-decoration: none !important;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.navlink:hover{
+    text-decoration: none !important;
+    color: rgba(255,23,68,.8);
+}
+
+.podcast-title{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+/* sidebar styles ________________________________ends Here______________________________________________________ */
+
+
+
+.all-head{
+    font-size: 1.5rem;
+}
+
+
+
+
+.push50{
+    margin-top: 170px;
+}
+
+.track-imgart{
+    border-radius: 5px;
+    height: 160px;
+
+}
+
+.track-imgart-artist{
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.track-title{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.track-title p{
+    text-align: center;
+    margin-top:10px;
+    color: #fff;
+}
+
+
+.title{
+    font-size: 1.5rem !important;
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+.desc{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* media query_________________________________________________ */
+@media only screen and (max-width: 600px) {
+  
+    .disappear{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+/* media query_________________________________________________ */

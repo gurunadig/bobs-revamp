@@ -1,0 +1,52 @@
+{% load static %}
+
+<div class="disappear">
+
+<div class="sidebargrid">
+    <div class="row ">
+        <div class="col-12 mt-5 d-flex justify-content-center">
+            <img src="{% static './img/logo.png' %}" alt="" class="img-fluid sidebarlogo">
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <p class="text-light heading">Live Now</p>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <button class="btn btn-play text-center">
+                <i class="fas fa-play playicon"></i>
+            </button>          
+            {% for radiolink in radiolinks %}
+            <audio controls autoplay="autoplay" src="" type="audio/mpeg">
+            </audio>
+            {% endfor %}          
+        </div>  
+        
+        
+        <div class="col-12 d-flex justify-content-center">
+            <ul class="navul mt-5">
+                <li class="nav-item navli">
+                    <a class="nav-link navanchor" href="{% url 'artist' %}">Bob's Artist</a>
+                    </li>
+                    <li class="nav-item navli">
+                    <a class="nav-link navanchor" href="{% url 'podcast' %}">Bob's Podcast</a>
+                    </li>
+                    
+                    <li class="nav-item navli">
+                    <a class="nav-link navanchor" href="{% url 'blog' %}">Bob's Blog</a>
+                    </li>
+                    <li class="nav-item navli">
+                    <a class="nav-link navanchor" href="{% url 'about' %}">About Bob's</a>
+                    </li>
+                    <li class="nav-item navli">
+                    <a class="nav-link navanchor" href="{% url 'contact' %}">Contact Bob's</a>
+                    </li>
+                
+            </ul>
+        </div>
+
+
+    </div>
+
+</div>
+
+</div>
+
