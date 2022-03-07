@@ -5,7 +5,7 @@ from .models import Artist, Podcast, Radiolink, Blog
 
 
 def home(request):
-    artists = Artist.objects.all()[0:5]
+    artists = Artist.objects.all()[0:4]
     podcasts = Podcast.objects.all()
     radiolinks = Radiolink.objects.all()
     context = {'artists':artists, 'radiolinks':radiolinks, 'podcasts':podcasts}

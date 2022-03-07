@@ -12,8 +12,8 @@
         <div class="row">
             <div class="col-4 bordright">
                 <div class="row grid-80 d-flex justify-content-center align-items-center">
-                    <div class="col-6    slidergrid bordwhite">
-                            <!-- <div class="owl-carousel">
+                    <!-- <div class="col-6 slidergrid bordwhite">
+                            <div class="owl-carousel">
                                 <div class="slidgrid">
                                     <img src="{% static './img/grid1.jpg' %}" alt="" class="img-fluid">
                                 </div>
@@ -26,10 +26,13 @@
                                 <div class="slidgrid">
                                     <img src="{% static './img/grid4.jpg' %}" alt="" class="img-fluid">
                                 </div>
-                            </div> -->
-                            {% include 'player.html' %}
-
-                    </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            
+                        </div> -->
+                        {% include 'player.html' %}
                 </div>
 
                 <div class="row">
@@ -52,7 +55,11 @@
             </div>
 
             <div class="col-8 scrollgrid-main bordwhite">
+
                 <div class="row scroller">
+                    <div class="col-12">
+                        
+                    </div>
                     <div class="col-12 p-0 maingrid">
                         <div class="row d-flex justify-content-center">
                          
@@ -66,7 +73,7 @@
 
                                 <div class="row artist-row mt-2 mb-5 d-flex justify-content-between">
                                     {% for artist in artists %}
-                                    <div class="col-2 track-grid">
+                                    <div class="col-3 track-grid">
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="row no-gutters">

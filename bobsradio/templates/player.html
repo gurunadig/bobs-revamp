@@ -1,18 +1,37 @@
 {% load static %}
 
-<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 <div class="player">
-	    <canvas></canvas>
-		<div class="song">
-			<div class="artist"></div>
-			<div class="name"></div>
-		</div>
-		<div class="playarea">
-			<div class="prevSong"></div>
-			<div class="play"></div>
-			<div class="pause"></div>
-			<div class="nextSong"></div>
-		</div>
-		<div class="soundControl"></div>
-		<!-- <div class="time">00:00</div> -->
+	<div class="cover">
+		<img src="https://hosseinghanbari.ir/other/music-player/autumn.jpg" alt="">
 	</div>
+	<div class="info">
+		<div class="title">Autumn</div>
+		<div class="singer">Instrumental Music</div>
+	</div>
+	<div class="volume-box">
+		<span class="volume-down"><i class="material-icons">remove</i></span>
+		<input type="range" class="volume-range" step="1" value="80" min="0" max="100"
+			oninput="music.volume = this.value/100">
+		<span class="volume-up"><i class="material-icons">add</i></span>
+	</div>
+	<div class="btn-box">
+		<i class="material-icons repeat" onclick="handleRepeat()">repeat</i>
+		<i class="material-icons favorite active" onclick="handleFavorite()">favorite</i>
+		<i class="fa-solid fa-volume" onclick="handleVolume()">volume_up</i>
+	</div>
+	<div class="music-box">
+		<input type="range" step="1" class="seekbar" value="0" min="0" max="100" oninput="handleSeekBar()">
+
+		<audio class="music-element">
+			<source src="https://hosseinghanbari.ir/other/music-player/autumn.mp3" type="audio/mp3">
+		</audio>
+		<span class="current-time">0:0</span><span class="duration">0:0</span>
+		<span class="fa-play" onclick="handlePlay()">
+			<i class="fa-solid ">play_arrow</i>
+		</span>
+	</div>
+</div><i class="fa-solid fa-volume"></i>
+
+
+
+
