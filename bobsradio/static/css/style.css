@@ -3,6 +3,7 @@ body{
     margin: 0;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif !important;
+
 }
 
 body::-webkit-scrollbar-track
@@ -300,6 +301,50 @@ body::-webkit-scrollbar-thumb
 
 
 
+/* mobile grid_________________________________________________ */
+
+.phonegrid{
+    border: 5px solid #000;
+    border-radius: 25px;
+    min-height: 580px;
+    background-color: #282176;
+    overflow: hidden;
+}
+
+
+
+.forbg{
+    background-image: url("../img/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+.btn-play{
+    background: rgba(0, 0, 0, 0);
+    border: none !important;
+}
+
+.playbtn{
+    font-size: 3rem;
+    color: #fff;
+}
+
+
+
+.full-height{
+    height: 100%;
+}
+
+.white-bord{
+   border: 2px solid #fff;
+
+}
+
+
+
+
+
 
 
 
@@ -307,6 +352,7 @@ body::-webkit-scrollbar-thumb
 
 
 /* media query_________________________________________________ */
+
 @media only screen and (max-width: 600px) {
   
     .disappear{
