@@ -350,6 +350,7 @@ body::-webkit-scrollbar-thumb
 
 .artistnamegrid{
     min-height: 230px;
+    max-height: auto;
 }
 
 

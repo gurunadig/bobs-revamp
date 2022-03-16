@@ -4,3 +4,13 @@ var x = document.getElementById("myAudio");
     x.play(); 
     
 } 
+
+function pauseAudio() {
+    x.pause();
+  }
+
+
+function muteAudio(){
+
+    myAudio.muted = !myAudio.muted;
+} 
