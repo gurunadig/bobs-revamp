@@ -18,6 +18,9 @@ def artist(request):
     return render(request, 'radio/artist.html', context)   
 
 
+
+
+
 def about(request):
     return render(request, 'radio/about.html')   
 
@@ -30,6 +33,11 @@ def blog(request):
     blogs = Blog.objects.all()
     context = {'blogs':blogs}
     return render(request, 'radio/blog.html', context)   
+
+def blogdetails(request, pk):
+    blogdetails = Blog.objects.filter(id=pk)
+    context = {'blogdetails':blogdetails}
+    return render(request, 'radio/BlogDetails.html', context)   
 
 
 def radiotv(request):

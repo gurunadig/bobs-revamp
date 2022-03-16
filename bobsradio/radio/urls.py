@@ -11,4 +11,5 @@ urlpatterns = [
     path('podcast', views.podcast, name='podcast'),
     path('blog', views.blog, name='blog'),
     path('ArtistDetails/<str:pk>', views.artistdetails, name='artistdetails'),
+    path('BlogDetails/<str:pk>', views.blogdetails, name='blogdetails')
 ]

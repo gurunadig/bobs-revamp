@@ -1,0 +1,47 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+<div class="forbg">
+<div class="col-12">
+    <h2 class="text-center main-title-white mt-3 mb-4">Bob's Star</h2>
+</div>
+<div class="container">
+
+<div class="col-12">
+    <div class="row mt-3 d-flex justify-content-center justify-content-lg-between">
+        {% for blog in blogdetails %}
+        <div class="col-12 col-md-8 col-lg-12 card">
+            <div class="row artist-grid">
+                <div class="col-4 p-0">
+                    <img src="{{ blog.Img.url }}" alt="Avatar" class="img-fluid image">
+                    <p class="text-center artistname">
+                        {{ artist.artist_name }}
+                    </p>
+                </div>
+                <div class="col-8 artistnamegrid">
+                    <div class="row artist-grid">
+                        <div class="col-12 pr-5 pb-2 text-justify">  
+                        <p class="mt-4">
+    
+                            {{ blog.title }}
+                        </p>
+                        <p>
+                            {{ blog.blog_text|safe|truncatechars:80  }}
+                            
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+           
+
+          
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+</div>
+</div>
+{% endblock content %}

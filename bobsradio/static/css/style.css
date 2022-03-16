@@ -289,7 +289,7 @@ body::-webkit-scrollbar-thumb
 
 
 .title{
-    font-size: 1.5rem !important;
+    font-size: 1.2rem !important;
     font-weight: 600;
     padding-right: 20px;
 }
@@ -297,6 +297,7 @@ body::-webkit-scrollbar-thumb
 .desc{
     padding-left: 20px;
     padding-right: 20px;
+    font-weight: 700;
 }
 
 
@@ -314,9 +315,12 @@ body::-webkit-scrollbar-thumb
 
 
 .forbg{
-    background-image: url("../img/bg.jpeg");
+    width: 100%;
+    height: 100vh !important;
+    background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: 100% 100%;
+
 }
 
 
@@ -341,7 +345,12 @@ body::-webkit-scrollbar-thumb
 
 }
 
+/* media query_________________________________________________ */
 
+
+.artistnamegrid{
+    min-height: 230px;
+}
 
 
 

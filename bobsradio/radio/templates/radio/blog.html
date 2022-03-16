@@ -3,36 +3,44 @@
 
 
 {% block content %}
+<div class="forbg">
 <div class="container">
+    <br>
+    <br>
 
-    <div class="col-12 mt-5">
+    <div class="col-12">
         <h2 class="to-white">Bob's Blog</h2>
     </div>
-    {% for blog in blogs %}
-    <div class="col-8 col-md-3 col-lg-12 card mt-4">
-        <div class="row blog-grid">
-            <div class="col-12 artistnamegrid">
+    <div class="col-8 col-md-3 col-lg-12 mt-4">
+        <div class="row blog-grid d-flex justify-content-between">
+            
+            {% for blog in blogs %}
+            <div class="col-5 card artistnamegrid">
                 <div class="row">
-                    <div class="col-4 p-0">
+                    <div class="col-6 p-0">
+                    <a href="{% url 'blogdetails' blog.id %}">
                         <img src="{{ blog.Img.url }}" alt="Avatar" class="img-fluid image">
+                    </a>
                     </div>
-                    <div class="col-8">
-                        <p class="title mt-4">
-                            {{ blog.title }}
-                        </p>
-                        
-                        <p class="desc">
-                            {{ blog.blog_text|safe }}
-                        </p>
+                    <div class="col-6">
+                        <a href="{% url 'blogdetails' blog.id %}">
+
+                            <p class="title mt-1">
+                                {{ blog.title }}
+                            </p>
+                            
+                            <p class="desc">
+                                {{ blog.blog_text|safe|truncatechars:80  }}
+                            </p>
+                        </a>
                     </div>
                 </div>
-            
-
             </div>
+            {% endfor %}
         </div>
     </div>
-{% endfor %}
 
+</div>
 </div>
 
 {% endblock content %}
