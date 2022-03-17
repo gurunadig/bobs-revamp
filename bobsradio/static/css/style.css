@@ -47,6 +47,11 @@ body::-webkit-scrollbar-thumb
 }
 
 
+.navicon{
+    font-size: 1.8rem !important;
+}
+
+
 .bgcolor{
     background-color: #131722;
     height: 100vh;
@@ -176,12 +181,23 @@ body::-webkit-scrollbar-thumb
     font-size: 2rem;
     color: #000;
 }
+
 .iconscon-white{
     color: #fff;
     font-size: 2rem;
     margin-right: 10px;
 }
 
+
+.iconscon-black{
+    color: #000;
+    font-size: 1.8rem;
+    margin-right: 10px;
+}
+
+.mapframe{
+    
+}
 
 .artistname{
     font-size: 1.2rem;
@@ -354,6 +370,16 @@ body::-webkit-scrollbar-thumb
 }
 
 
+
+.podcastiframe::-webkit-scrollbar
+{
+	display: none;
+}
+
+.podcastiframe::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+}
 
 
 
