@@ -316,6 +316,22 @@ body::-webkit-scrollbar-thumb
     font-weight: 700;
 }
 
+.blogtitle{
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #000 !important;
+}
+
+.blogdescp{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000 !important;
+}
+
 
 
 /* mobile grid_________________________________________________ */
@@ -382,17 +398,28 @@ body::-webkit-scrollbar-thumb
 }
 
 
+.mapframe{
+    width: 100%;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 300px;
 
+}
 
 
 
 
 /* media query_________________________________________________ */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   
     .disappear{
         display: none;
+    }
+
+    .track-imgart{
+        height: auto;
     }
 
 }
