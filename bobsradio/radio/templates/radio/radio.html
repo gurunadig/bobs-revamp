@@ -9,14 +9,15 @@
 
 <div class="row p-0">
 
-    <div class="col-12 grid-80 p-0 m-0 bordwhite">
+    <div class="col-12 p-0 m-0 bordwhite">
 
         <div class="row">
-            <div class="col-12 col-md-4 col-lg-4 bordright disappear">
-                <div class="row grid-80 d-flex justify-content-center ">
-                    <div class="col-6 phonegrid mt-5 p-0">
-                        <div class="owl-carousel">
-                            <div class="slidgrid">
+            <div class="col-12 col-md-4 col-lg-4 bordright">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-8 col-md-6 col-lg-6 phonegrid mt-3 mt-md-5 mt-lg-5 p-0">
+                        <div class="disappear">
+                            <div class="owl-carousel">
+                                <div class="slidgrid">
                                 <img src="{% static './img/grid1.jpg' %}" alt="" class="img-fluid">
                             </div>
                             <div class="slidgrid">
@@ -29,8 +30,9 @@
                                 <img src="{% static './img/grid1.jpg' %}" alt="" class="img-fluid">
                             </div>
                         </div>
-
-                        {% include 'player.html' %}
+                    </div>
+                    
+                    {% include 'player.html' %}
                         
                     </div>
                 </div>

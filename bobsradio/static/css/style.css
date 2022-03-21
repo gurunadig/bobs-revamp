@@ -422,6 +422,14 @@ body::-webkit-scrollbar-thumb
         height: auto;
     }
 
+    .phonegrid{
+        min-height: 160px !important;
+    }
+    .playbtn{
+        font-size: 2.5rem;
+        color: #fff;
+    }
+    
 }
 
 

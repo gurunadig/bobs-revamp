@@ -1,16 +1,14 @@
-var x = document.getElementById("myAudio"); 
+window.onload = function() {
+    document.getElementById("Sample").play();
+}
 
-    function playAudio() { 
-    x.play(); 
-    
-} 
 
-function pauseAudio() {
-    x.pause();
-  }
-
+var SampleAudio = document.getElementById("Sample");
+function togglePlay() {
+return SampleAudio.paused ? SampleAudio.play() : SampleAudio.pause();
+};
 
 function muteAudio(){
 
-    Sample.muted = !Sample.muted;
+    SampleAudio.muted = !SampleAudio.muted;
 } 
