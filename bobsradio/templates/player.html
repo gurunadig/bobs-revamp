@@ -1,20 +1,29 @@
 {% load static %}
 
-<audio id="myAudio" autoplay>
+<!-- <audio id="myAudio" autoplay>
 	<source src="{% static './css/hey.mp3'%}" type="audio/mpeg">
-  </audio>
+  </audio> -->
 
 <div class="row full-height">
 	<div class="col-12 d-flex justify-content-center">
 		<div class="fixbtm mt-5 mb-5">
-			<button class="btn btn-play" onclick="playAudio()" type="button">
+			<!-- <button class="btn btn-play" onclick="playAudio()" type="button">
 				<i class="fas fa-play playbtn"></i>
 			</button>
 			<button class="btn btn-play" onclick="pauseAudio()" type="button">
 				<i class="fas fa-pause playbtn"></i>
-			</button>
+			</button> -->
+			
+			<audio id="Sample" preload="auto" autoplay>
+				<source src="{% static './css/hey.mp3'%}" type="audio/mp4">
+				<source src="{% static './css/hey.mp3'%}" type="video/ogg"> 
+			</audio>
+			<a class="btn btn-play" onClick="togglePlay()">
+				  <i class="fas fa-pause playbtn whenplay"></i>
+
+			</a>
 			<button class="btn btn-play" onclick="muteAudio()" type="button">
-				<i class="fas fa-volume-off playbtn"></i>
+				<i class="fas fa-volume-up playbtn whenvol"></i>
 			</button>
 		</div>
 	</div>

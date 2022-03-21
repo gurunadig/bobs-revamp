@@ -12,5 +12,5 @@ function pauseAudio() {
 
 function muteAudio(){
 
-    myAudio.muted = !myAudio.muted;
+    Sample.muted = !Sample.muted;
 } 

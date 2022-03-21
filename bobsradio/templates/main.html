@@ -54,8 +54,23 @@
             wow.init();
     </script>
     <script>
-     
+        var SampleAudio = document.getElementById("Sample");
 
+        function togglePlay() {
+        return SampleAudio.paused ? SampleAudio.play() : SampleAudio.pause();
+        };
+        function muteAudio(){
+
+            SampleAudio.muted = !SampleAudio.muted;
+        } 
     </script>
+<script>
+	$(".whenvol").click(function () {
+		$(".whenvol").toggleClass("fa-volume-up fa-volume-mute");
+	});
+	$(".whenplay").click(function () {
+		$(".whenplay").toggleClass("fa-play fa-pause");
+	});
+</script>
 </body>
 </html>
