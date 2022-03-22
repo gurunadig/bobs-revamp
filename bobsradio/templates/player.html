@@ -8,12 +8,13 @@
 	<div class="col-12 d-flex justify-content-center">
 		<div class="fixbtm mt-3 mb-3">
 			<div class="col-12">
-				<p class="all-head text-center main-title-white">Live Now</p>
+				<p class="all-head text-center ">Live Now</p>
 			</div>
-			
-			<audio id="Sample" autoplay>
-				<source src="{% static './css/hey.mp3'%}" type="audio/mp4">
-			</audio>
+			{% for radiolink in radiolinks %}
+				<audio id="Sample" autoplay>
+					<source src="{{ radiolink.url }}" type="audio/mp4">
+				</audio>
+			{% endfor %}
 			<a class="btn btn-play" onClick="togglePlay()">
 				  <i class="fas fa-pause playbtn whenplay"></i>
 

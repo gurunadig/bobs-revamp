@@ -26,20 +26,25 @@ body::-webkit-scrollbar-thumb
 	background-color: #555;
 }
 
+.forbgall{
+    background-color: #ffffff00;
+}
+
 .navigation{
-    background-color: #282176;
+    background-color: #ffffff00;
    
 }
 
 
 .navbar{
-    background-color: #282176;
+    background-color: #ffffff00;
    
 }
 
 .nav-link{
 
-    color: #fff !important;
+    color: #fff;
+    font-weight: 700;
 }
 
 .logo{
@@ -213,6 +218,12 @@ body::-webkit-scrollbar-thumb
 .to-white{
     color: #fff;
 }
+
+.bannerimgsize{
+    min-height: 350px;
+    max-height: 450px;
+}
+
 /* sidebar styles ______________________________________________________________________________________ */
 
 .sidebargrid{
@@ -271,6 +282,7 @@ body::-webkit-scrollbar-thumb
 
 .all-head{
     font-size: 1.5rem;
+    font-weight: 600;
 }
 
 
@@ -283,6 +295,7 @@ body::-webkit-scrollbar-thumb
 .track-imgart{
     border-radius: 5px;
     height: 260px;
+    border: 2px solid #fff;
 
 }
 
@@ -340,16 +353,17 @@ body::-webkit-scrollbar-thumb
     border: 5px solid #000;
     border-radius: 25px;
     min-height: 580px;
-    background-color: #282176;
+    /* background-color: #282176; */
+    background-color: #f8f8f8;
     overflow: hidden;
 }
 
 
 
-.forbg{
+.forbgall{
     width: 100%;
-    height: 100vh !important;
-    background-image: url("../img/bg.jpg");
+    height: 120vh !important;
+    background-image: url("../img/bg3.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -362,8 +376,8 @@ body::-webkit-scrollbar-thumb
 }
 
 .playbtn{
-    font-size: 3rem;
-    color: #fff;
+    font-size: 2rem;
+    color: #000;
 }
 
 
@@ -413,21 +427,49 @@ body::-webkit-scrollbar-thumb
 /* media query_________________________________________________ */
 
 @media only screen and (max-width: 480px) {
-  
+    .forbgall{
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/bg3.jpg");
+        background-repeat: repeat-x;
+      
+    
+    }
+    
+
+
     .disappear{
         display: none;
+    }
+
+    .collapse{
+        background-color: #F5F5F5;
+        padding: 0;
+    }
+    .nav-item{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nav-link{
+        color: #000;
+  
     }
 
     .track-imgart{
         height: auto;
     }
-
     .phonegrid{
+        border: 4px solid #000;
+        border-radius: 25px;
         min-height: 160px !important;
+        /* background-color: #282176; */
+        background-color: #f8f8f8;
+        overflow: hidden;
     }
+
     .playbtn{
-        font-size: 2.5rem;
-        color: #fff;
+        font-size: 2.4rem;
+        color: #000;
     }
     
 }

@@ -24,17 +24,20 @@
 </head>
 <body>
     
-    {% include 'navbar.html' %}
+    <div class="forbgall">
 
-
-    {% block content %}
+        {% include 'navbar.html' %}
+        
+        
+        {% block content %}
+        
+        
+        {% endblock content %}
+        
+        
+        {% include 'footer.html' %}
     
-    
-    {% endblock content %}
-
-    
-    {% include 'footer.html' %}
-    
+    </div>
     <script src="{% static './js/jquery-3.2.1.slim.min.js' %}" ></script>
     <script src="{% static './js/popper.min.js' %}" ></script>
     <script src="{% static './js/bootstrap.min.js' %}" ></script>
