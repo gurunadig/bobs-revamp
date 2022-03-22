@@ -220,6 +220,7 @@ body::-webkit-scrollbar-thumb
 }
 
 .bannerimgsize{
+    border-radius: 25px;
     min-height: 350px;
     max-height: 450px;
 }
@@ -293,7 +294,7 @@ body::-webkit-scrollbar-thumb
 }
 
 .track-imgart{
-    border-radius: 5px;
+    border-radius: 25px;
     height: 260px;
     border: 2px solid #fff;
 
@@ -301,7 +302,8 @@ body::-webkit-scrollbar-thumb
 
 .track-imgart-artist{
     height: auto;
-    border-radius: 5px;
+    border-radius: 25px;
+    border: 2px solid #fff;
 }
 
 
@@ -311,6 +313,7 @@ body::-webkit-scrollbar-thumb
 }
 
 .track-title p{
+    font-weight: 600;
     text-align: center;
     margin-top:10px;
     color: #fff;
