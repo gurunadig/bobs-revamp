@@ -26,9 +26,6 @@ body::-webkit-scrollbar-thumb
 	background-color: #555;
 }
 
-.forbgall{
-    background-color: #ffffff00;
-}
 
 .navigation{
     background-color: #ffffff00;
@@ -364,14 +361,15 @@ body::-webkit-scrollbar-thumb
 
 
 .forbgall{
+    margin: 0;
+    background-color: #ffffff00;
     width: 100%;
-    height: 120vh !important;
+    height: 100%;
     background-image: url("../img/bg3.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 
 }
-
 
 .btn-play{
     background: rgba(0, 0, 0, 0);
@@ -434,12 +432,10 @@ body::-webkit-scrollbar-thumb
         width: 100%;
         height: 100%;
         background-image: url("../img/bg3.jpg");
-        background-repeat: repeat-x;
-      
-    
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
-    
-
 
     .disappear{
         display: none;
@@ -474,6 +470,12 @@ body::-webkit-scrollbar-thumb
         font-size: 2.4rem;
         color: #000;
     }
+
+    .bannerimgsize{
+        border-radius: 25px;
+        min-height: 250px;
+    }
+    
     
 }
 

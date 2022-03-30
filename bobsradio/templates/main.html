@@ -25,9 +25,10 @@
 <body>
     
     <div class="forbgall">
+        <div class="forbgsmall">
 
-        {% include 'navbar.html' %}
-        
+            {% include 'navbar.html' %}
+            
         
         {% block content %}
         
@@ -36,7 +37,8 @@
         
         
         {% include 'footer.html' %}
-    
+        
+        </div>
     </div>
     <script src="{% static './js/jquery-3.2.1.slim.min.js' %}" ></script>
     <script src="{% static './js/popper.min.js' %}" ></script>
