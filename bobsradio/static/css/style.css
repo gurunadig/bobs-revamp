@@ -413,6 +413,19 @@ body::-webkit-scrollbar-thumb
 }
 
 
+.tviframe::-webkit-scrollbar
+{
+	display: none;
+}
+
+.tviframe
+{
+    border: 3px solid #fff;
+	border-radius: 15px;
+    min-height: 200px;
+}
+
+
 .mapframe{
     width: 100%;
     border: 0;

@@ -26,6 +26,15 @@ class Podcast(models.Model):
         return self.title
 
 
+class Bobstv(models.Model):
+    title = models.CharField(max_length=200, blank=False, null=False)
+    description = RichTextField(blank=False, null=False)
+    url = models.TextField(blank=False, null=False)
+
+    def __str__(self):
+        return self.title
+
+
 
 class Radiolink(models.Model):
     url = models.TextField(blank=False, null=False)
@@ -40,6 +49,14 @@ class Blog(models.Model):
     blog_text = RichTextField(blank=False, null=False)
     tags = models.CharField(max_length=50, blank=True, null=True)
     Img = models.ImageField(default="400-200.png", null=False, blank=True)
+
+    def __str__(self):
+        return self.title
+
+
+class Carousel(models.Model):
+    title = models.CharField(max_length=200, blank=True, null=True)
+    image = models.ImageField(default="400-200.png", null=False, blank=True)
 
     def __str__(self):
         return self.title

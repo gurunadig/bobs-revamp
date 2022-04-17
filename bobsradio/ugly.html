@@ -91,3 +91,18 @@
         
     </div>
 </div>
+
+
+
+<div class="carousel-inner">
+    {% for slider in sliders %}
+        {% if forloop.first %}
+            <div class="carousel-item active  ">
+        {% else %}
+            <div class="carousel-item  ">
+        {% endif %}
+        <img class="img-fluid bannerimgsize" class="h-50 d-inline-block" src="{{ slider.image.url}}" alt="{{slider.title}}">
+        </div>
+
+    {% endfor %}
+</div>

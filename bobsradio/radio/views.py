@@ -1,14 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from . import views
-from .models import Artist, Podcast, Radiolink, Blog
+from .models import Artist, Podcast, Radiolink, Blog, Bobstv, Carousel
 
 
 def home(request):
     artists = Artist.objects.all()[0:4]
-    podcasts = Podcast.objects.all()
-    radiolinks = Radiolink.objects.all()
-    context = {'artists':artists, 'radiolinks':radiolinks, 'podcasts':podcasts}
+    podcasts = Podcast.objects.all()[0:4]
+    radiolinks = Radiolink.objects.all()[0:4]
+    tvbobs = Bobstv.objects.all()[0:4]
+    blogs = Blog.objects.all()[0:4]
+    sliders = Carousel.objects.all()
+    context = {'artists':artists, 'radiolinks':radiolinks, 'podcasts':podcasts, 'tvbobs':tvbobs, 'blogs':blogs, 'sliders':sliders}
     return render(request, 'radio/radio.html', context)   
 
 
@@ -16,9 +19,6 @@ def artist(request):
     artists = Artist.objects.all()
     context = {'artists':artists}
     return render(request, 'radio/artist.html', context)   
-
-
-
 
 
 def about(request):
@@ -40,8 +40,10 @@ def blogdetails(request, pk):
     return render(request, 'radio/BlogDetails.html', context)   
 
 
-def radiotv(request):
-    return render(request, 'radio/radiotv.html')   
+def bobstv(request):
+    tvbobs = Bobstv.objects.all()
+    context = {'tvbobs':tvbobs}
+    return render(request, 'radio/bobstv.html', context)   
 
 def podcast(request):
     podcasts = Podcast.objects.all()
