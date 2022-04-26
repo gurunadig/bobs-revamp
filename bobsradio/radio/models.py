@@ -49,7 +49,8 @@ class Blog(models.Model):
     blog_text = RichTextField(blank=False, null=False)
     tags = models.CharField(max_length=50, blank=True, null=True)
     Img = models.ImageField(default="400-200.png", null=False, blank=True)
-
+    author = models.CharField(max_length=200, blank=True, null=True)
+    
     def __str__(self):
         return self.title
 
@@ -57,6 +58,7 @@ class Blog(models.Model):
 class Carousel(models.Model):
     title = models.CharField(max_length=200, blank=True, null=True)
     image = models.ImageField(default="400-200.png", null=False, blank=True)
+    route = models.CharField(max_length=200, blank=True, null=True)
 
     def __str__(self):
         return self.title
