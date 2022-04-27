@@ -15,15 +15,15 @@
             <div class="row artist-grid">
                 <div class="col-12 col-md-4 col-lg-4 p-0">
                     <img src="{{ blog.Img.url }}" alt="Avatar" class="img-fluid image">
-                    <p class="text-center artistname">
-                        {{ artist.artist_name }}
-                    </p>
                 </div>
                 <div class="col-12 col-md-8 col-lg-8 artistnamegrid">
                     <div class="row artist-grid">
                         <div class="col-12 pr-5 pb-2 text-justify">  
-                        <p class="mt-4">
+                        <p class="mt-4 titleblog">
                             {{ blog.title }}
+                        </p>
+                        <p class="mt-2 authorblog">
+                            Author : {{ blog.author }}
                         </p>
                         <p>
                             {{ blog.blog_text|safe }}

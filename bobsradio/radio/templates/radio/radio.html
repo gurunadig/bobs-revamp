@@ -39,7 +39,7 @@
 
                     <div class="col-12">
                         <div class="row d-flex justify-content-center">
-                            <div class="col-12 col-md-10 col-lg-10 mt-4">
+                            <div class="col-10 col-md-10 col-lg-10 mt-4">
                                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner">
                                         {% for slider in sliders %}
@@ -136,7 +136,7 @@
                                             {% for podcast in podcasts %}
                                             <div class="col-12 col-md-3 col-lg-3 mt-4">
                                                 <div class="row artist-grid d-flex justify-content-center">
-                                                    <div class="col-9 p-0">
+                                                    <div class="col-12 p-0">
                                                         <iframe scrolling="no" class="img-fluid podcastiframe" src="{{ podcast.url }}" frameborder="0"></iframe>
                                                     </div>
                                                     <div class="col-12 track-title">
@@ -149,7 +149,7 @@
                                             </div>
                                             {% endfor %}
                                             <div class="col-12">
-                                                <a class="decorationnone" href="/artist">
+                                                <a class="decorationnone" href="/podcast">
                                                     <p class="text-right towhite">Read More ></p>
                                                 </a>
                                             </div>
@@ -191,7 +191,7 @@
                                             </div>
                                             {% endfor %}
                                             <div class="col-12">
-                                                <a class="decorationnone" href="/artist">
+                                                <a class="decorationnone" href="/bobstv">
                                                     <p class="text-right towhite">Read More ></p>
                                                 </a>
                                             </div>
@@ -215,12 +215,13 @@
                                                 <p class="all-head main-title-white ml-1">Blog</p>
                                             </div>
                                         </div>
+
                                         <div class="row d-flex justify-content-md-center justify-content-lg-center">
-                                            <div class="col-10 col-md-3 col-lg-12 mt-4">
+                                            <div class="col-12 col-md-3 col-lg-12 mt-4">
                                                 <div class="row blog-grid  justify-content-md-around justify-content-lg-around">
                                                     
                                                     {% for blog in blogs %}
-                                                    <div class="col-10 col-md-5 col-lg-5 card artistnamegrid mb-4">
+                                                    <div class="col-11 col-md-5 col-lg-5 card artistnamegrid mb-4">
                                                         <div class="row">
                                                             <div class="col-12 col-md-6 col-lg-6 p-0">
                                                             <a href="{% url 'blogdetails' blog.id %}">
@@ -243,7 +244,7 @@
                                                     </div>
                                                     {% endfor %}
                                                     <div class="col-12">
-                                                        <a class="decorationnone" href="/artist">
+                                                        <a class="decorationnone" href="/blog">
                                                             <p class="text-right towhite">Read More ></p>
                                                         </a>
                                                     </div>

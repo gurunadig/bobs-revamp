@@ -9,7 +9,7 @@ def home(request):
     podcasts = Podcast.objects.all()[0:4]
     radiolinks = Radiolink.objects.all()[0:4]
     tvbobs = Bobstv.objects.all()[0:4]
-    blogs = Blog.objects.all()[0:4]
+    blogs = Blog.objects.all()[0:2]
     sliders = Carousel.objects.all()
     context = {'artists':artists, 'radiolinks':radiolinks, 'podcasts':podcasts, 'tvbobs':tvbobs, 'blogs':blogs, 'sliders':sliders}
     return render(request, 'radio/radio.html', context)   
